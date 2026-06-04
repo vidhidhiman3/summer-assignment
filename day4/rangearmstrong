@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int start,end,n,d,sum=0,temp;
+    printf("enter the ranges");
+    scanf("%d%d",&start,&end);
+
+    for(n=start;n<=end;n++)
+    {
+        temp=n;
+        while(temp>0)
+        {
+            d=temp%10;
+            sum=sum+d*d*d;
+            n=n/10;
+        }
+    }
+        if(sum==n)
+        {
+            printf("%d",n);
+        }
+    
+    return 0;
+}
