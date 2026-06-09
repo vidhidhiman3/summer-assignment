@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int x, n, ans = 1;
+
+    printf("Enter x and n: ");
+    scanf("%d %d", &x, &n);
+
+    while (n > 0) {
+        ans = ans * x;
+        n--;
+    }
+
+    printf("Answer = %d", ans);
+
+    return 0;
+}
