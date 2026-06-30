@@ -1,0 +1,13 @@
+# Input a sentence
+sentence = input("Enter a sentence: ")
+
+# Split the sentence into words
+words = sentence.split()
+
+# Sort words by their length
+words.sort(key=len)
+
+# Display the sorted words
+print("Words sorted by length:")
+for word in words:
+    print(word)
